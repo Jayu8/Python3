@@ -3,8 +3,9 @@
 
 >>python
 
-Package:
-/>>/ import mypackage.demo<br>
+Package:<br>
+
+>> import mypackage.demo<br>
 >> mypackage.demo.demoprint()<br> (we get output)<br>
 OR<br>
 >>import mypackage.demo as de<br>
@@ -17,9 +18,9 @@ Subpackage:<br><br>
 >>import mypackage.subpackage.subdemo<br>
 >>mypackage.subpackage.subdemo.subdemoprint()<br>
 OR<br>
->>import mypackage.subpackage.subdemo as sd<br><br>
+>>import mypackage.subpackage.subdemo as sd<br>
 >>sd.subdemoprint()<br>
-OR<br><br><br><br>
+OR<br>
 >> from mypackage.subpackage.subdemo  import subdemoprint()<br>
 >> subdemoprint()<br>
 
