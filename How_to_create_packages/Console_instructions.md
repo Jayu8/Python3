@@ -4,23 +4,23 @@
 >>python
 
 Package:
->>import mypackage.demo
->>mypackage.demo.demoprint() (we get output)
-OR
->>import mypackage.demo as de
->>de.demoprint()
-OR
->> from mypackage.demo import demoprint()
->> demoprint()
+>> import mypackage.demo<br>
+>> mypackage.demo.demoprint()<br> (we get output)
+OR<br>
+>>import mypackage.demo as de<br>
+>>de.demoprint()<br>
+OR<br>
+>> from mypackage.demo import demoprint()<br>
+>> demoprint()<br>
 
-Subpackage:
->>import mypackage.subpackage.subdemo
->>mypackage.subpackage.subdemo.subdemoprint()
-OR
->>import mypackage.subpackage.subdemo as sd
->>sd.subdemoprint()
-OR
->> from mypackage.subpackage.subdemo  import subdemoprint()
->> subdemoprint()
+Subpackage:<br><br>
+>>import mypackage.subpackage.subdemo<br>
+>>mypackage.subpackage.subdemo.subdemoprint()<br>
+OR<br>
+>>import mypackage.subpackage.subdemo as sd<br><br>
+>>sd.subdemoprint()<br>
+OR<br><br><br><br>
+>> from mypackage.subpackage.subdemo  import subdemoprint()<br><br><br>
+>> subdemoprint()<br><br>
 
-Ref : https://www.youtube.com/watch?v=qmsTqQbcBNM 
+Ref : https://www.youtube.com/watch?v=qmsTqQbcBNM <br>
