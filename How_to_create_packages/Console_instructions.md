@@ -4,8 +4,8 @@
 >>python
 
 Package:
->> import mypackage.demo<br>
->> mypackage.demo.demoprint()<br> (we get output)
+/>>/ import mypackage.demo<br>
+>> mypackage.demo.demoprint()<br> (we get output)<br>
 OR<br>
 >>import mypackage.demo as de<br>
 >>de.demoprint()<br>
@@ -20,7 +20,7 @@ OR<br>
 >>import mypackage.subpackage.subdemo as sd<br><br>
 >>sd.subdemoprint()<br>
 OR<br><br><br><br>
->> from mypackage.subpackage.subdemo  import subdemoprint()<br><br><br>
->> subdemoprint()<br><br>
+>> from mypackage.subpackage.subdemo  import subdemoprint()<br>
+>> subdemoprint()<br>
 
 Ref : https://www.youtube.com/watch?v=qmsTqQbcBNM <br>
