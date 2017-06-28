@@ -1,0 +1,44 @@
+import random
+#Return
+
+def return_dates():
+    dates = [] # with return you need to create a list then return it
+    for i in range(5):
+        date = random.choice(["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"])
+        dates.append(date)
+    return dates
+
+#Yield    
+def yield_dates():
+    for i in range(5):
+        date = random.choice(["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"])
+        yield date # yield makes a generator automatically which works in a similar way
+        
+#Calling functions
+dates_list = return_dates()
+print(dates_list)
+for i in dates_list:
+    print(i)
+
+dates_generator = yield_dates()
+print(dates_generator)
+for i in  dates_generator:
+    print(i)
+    
+"""
+Output:
+['5th', '8th', '2nd', '6th', '4th']
+5th
+8th
+2nd
+6th
+4th
+<generator object yield_dates at 0x000000000BB38120>
+9th
+6th
+5th
+2nd
+6th
+"""
+
+
