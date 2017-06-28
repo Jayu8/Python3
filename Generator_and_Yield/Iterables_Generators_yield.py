@@ -35,7 +35,7 @@ Each time you call next() on the iterator (as happens in a for-loop), execution 
 (Or return, which raises StopIteration and ends the series.)
 
 """
-def squares_the_yield_way(n):             # Order of execution    
+def squares_the_yield_way(n):             # Order of execution -- Stepin
     for x in range(n):
         y = x * x
         yield y                           # 3rd,6th (includes above statements as well)
