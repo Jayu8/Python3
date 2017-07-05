@@ -1,4 +1,4 @@
-**All the terms here orifinated from functional programming language** 
+**All the terms here orifinated from functional programming language** <br>
 **LAMBDA**<br>
 **Syntax:** lambda argument_list: expression <br>
 
