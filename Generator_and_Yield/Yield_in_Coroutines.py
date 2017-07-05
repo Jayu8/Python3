@@ -15,12 +15,11 @@ EX: PRODUCER AND COMNSUMER PROBLEM
 def bank_account(deposited, interest_rate):
     while True:                                             #infinite loop ,comes out only when yield is executed.
         calculated_interest = interest_rate * deposited 
-        received = yield calculated_interest             #yield is calculated and returned. 
-        if received:                                     #recieved comes into picture when send is used 
+        received = yield calculated_interest             #yield is calculated and returned tomain 
+        if received:                                     #recieved comes into picture when send is used in main
             deposited += received                        # after this statement goes to while true
-
 my_account = bank_account(1000, .05) # calling function
-first_year_interest = next(my_account)
-print first_year_interest
+first_year_interest = next(my_account) # next used to move through iterable 
+print first_year_interest               #50
 next_year_interest = my_account.send(first_year_interest + 1000)  # send function goes to recieved variable
-print next_year_interest
+print next_year_interest     #102.5
