@@ -1,12 +1,13 @@
 **Function names are references to functions and that we can assign multiple names to the same function:<br>**
- def succ(x):<br>
+$def succ(x):<br>
      return x + 1 <br>
 $successor = succ<br>
->>> successor(10)<br>
+$ successor(10)<br>
 11<br>
->>> succ(10)<br>
+$succ(10)<br>
 11<br>
 The next important fact is that we can delete **either** "succ" **or** "successor" without deleting the function itself. <br>
+
 **Functions inside Functions**<br>
 def temperature(t):<br>
     def celsius2fahrenheit(x):<br>
@@ -15,9 +16,9 @@ def temperature(t):<br>
     result = "It's " + str(celsius2fahrenheit(t)) + " degrees!" <br>
     return result<br>
 print(temperature(20))<br>
->>It's 68.0 degrees!<br>
-**Functions as Parameters**<br>
+$It's 68.0 degrees!<br>
 
+**Functions as Parameters**<br>
 **As every parameter of a function is a reference to an object** and **functions are objects as well** in python<br>
 **We can pass functions - or better "references to functions" - as parameters to a function.**<br>
 
@@ -29,7 +30,7 @@ def foo(func):<br>
     return res<br>
 print(foo(math.sin))<br>
 print(foo(math.cos))<br>
->>> <br>
+$ <br>
 The function sin was passed to foo<br>
 2.3492405557375347<br>
 The function cos was passed to foo<br>
