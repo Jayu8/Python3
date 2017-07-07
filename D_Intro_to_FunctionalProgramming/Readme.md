@@ -1,18 +1,17 @@
 **Function names are references to functions and that we can assign multiple names to the same function:<br>**
-def succ(x):<br>
-     return x + 1 <br>
+```def succ(x):<br>
+    return x + 1 <br>
 successor = succ<br>
- successor(10)<br>
-11<br>
+successor(10)<br>
+#11<br>
 succ(10)<br>
-11<br>
+#11<br>```
 The next important fact is that we can delete **either** "succ" **or** "successor" without deleting the function itself. <br>
 
 **Functions inside Functions**<br>
 def temperature(t):<br>
     def celsius2fahrenheit(x):<br>
-        return 9 * x / 5 + 32<br>
-        
+        return 9 * x / 5 + 32<br>    
     result = "It's " + str(celsius2fahrenheit(t)) + " degrees!" <br>
     return result<br>
 print(temperature(20))<br>
