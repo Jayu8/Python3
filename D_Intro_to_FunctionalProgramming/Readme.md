@@ -1,12 +1,12 @@
 **Function names are references to functions and that we can assign multiple names to the same function:<br>**
 ```
-def succ(x):<br>
-    return x + 1 <br>
-successor = succ<br>
-successor(10)<br>
->>>11<br>
-succ(10)<br>
->>>11<br>
+def succ(x):
+    return x + 1 
+successor = succ
+successor(10)
+>>>11
+succ(10)
+>>>11
 ```
 Here we can delete **either** "succ" **or** "successor" without deleting the function itself. <br>
 
@@ -41,14 +41,14 @@ The function cos was passed to foo<br>
 **Functions returning Functions**<br>
 **The output of a function is also a reference to an object.Therefore functions can return references to function objects**<br>
 ```
-def f(x):<br>
-    def g(y):<br>
-        return y + x + 3 <br>
-    return g<br><br>
-nf1 = f(1)      #calls f returns g<br>
-nf2 = f(3)      #calls f returns g<br>
-print(nf1(1))   #calls g returns '5'<br>
-print(nf2(1))   #calls g returns '7'<br>
+def f(x):
+    def g(y):
+        return y + x + 3 
+    return g
+nf1 = f(1)      #calls f returns g
+nf2 = f(3)      #calls f returns g
+print(nf1(1))   #calls g returns '5'
+print(nf2(1))   #calls g returns '7
 ```
 
 
