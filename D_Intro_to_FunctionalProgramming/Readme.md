@@ -1,7 +1,7 @@
 **Function names are references to functions and that we can assign multiple names to the same function:<br>**
-> def succ(x):<br>
+ def succ(x):<br>
      return x + 1 <br>
->>> successor = succ<br>
+$successor = succ<br>
 >>> successor(10)<br>
 11<br>
 >>> succ(10)<br>
