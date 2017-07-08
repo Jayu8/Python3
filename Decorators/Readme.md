@@ -1,3 +1,16 @@
+General pattern:
+```
+def decorator(func):
+  def helper(args):
+    ...
+    func(args)
+    ...
+  return helper
+  
+@decorator
+func(args)
+  ...
+```
 Decorator in Python is a callable Python object that is used to modify a function, method or class definition. <br>
 The original object, the one which is going to be modified, is passed to a decorator as an argument. <br>
 The decorator returns a modified object, e.g. a modified function, which is bound to the name used in the definition.<br>
