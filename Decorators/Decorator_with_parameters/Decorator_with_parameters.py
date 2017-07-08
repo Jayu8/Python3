@@ -38,3 +38,6 @@ def foo(x):
 greeting2 = greeting("καλημερα")
 foo = greeting2(foo)
 foo("Hi")
+###### OR########
+foo = greeting("καλημερα")(foo)
+
