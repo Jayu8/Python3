@@ -1,5 +1,7 @@
 Simple concepts are tried and tested<br>
 
+simple python 3.5: http://python-3-for-scientists.readthedocs.io/en/latest/index.html
+
 Nice tutorial: http://www.python-course.eu/python3_course.php
 
 Python developers guide: https://www.python.org/dev/
